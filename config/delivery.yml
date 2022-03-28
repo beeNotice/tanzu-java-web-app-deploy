@@ -13,7 +13,7 @@ spec:
     metadata:
       annotations:
         boot.spring.io/actuator: http://:8080/actuator
-        boot.spring.io/version: 2.5.10
+        boot.spring.io/version: 2.5.11
         conventions.apps.tanzu.vmware.com/applied-conventions: |-
           appliveview-sample/app-live-view-connector
           appliveview-sample/app-live-view-appflavours
@@ -38,7 +38,7 @@ spec:
       - env:
         - name: JAVA_TOOL_OPTIONS
           value: -Dmanagement.endpoint.health.show-details="always" -Dmanagement.endpoints.web.base-path="/actuator" -Dmanagement.endpoints.web.exposure.include="*" -Dmanagement.server.port="8080" -Dserver.port="8080" -Dserver.shutdown.grace-period="24s"
-        image: harbor.withtanzu.com/fmartin/tanzu-app-tap/tanzu-java-web-app-deploy-dev@sha256:9f1636b1f05edce086478b63f38b5bd0f65dbaeb5faf10cdcf36cde80c76ac12
+        image: harbor.withtanzu.com/fmartin/tanzu-app-tap/tanzu-java-web-app-deploy-dev@sha256:5c129837260c7b9f305236e218dbdb6a4abb2cc02f9b1a471433282ccc24d157
         name: workload
         ports:
         - containerPort: 8080
